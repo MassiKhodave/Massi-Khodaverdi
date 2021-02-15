@@ -7,10 +7,16 @@ prettydoc::html_pretty:
   theme: Leonids
   highlight: github
 ---
+<p align="center">
 
+Office: 301 Jeffords Hall   
+    
+Email: mkhodave@uvm.edu   
 
-## this is my test
-My name is *Massi* and I like *Computional Biology*
+<img src="image.jpeg" width="300" height="400" />
+
+My name is *Massi* and I like *Plants* espesially **Sunflowers**
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

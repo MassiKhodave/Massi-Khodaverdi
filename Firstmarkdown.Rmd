@@ -1,24 +1,9 @@
 ---
-title: "BIO381"
+title: "My First Markdown Docoument"
 author: "Masoumeh Khodaverdi"
-date: "Febrarury 2021"
-output: 
-prettydoc::html_pretty:
-  theme: Leonids
-  highlight: github
+date: "2/16/2021"
+output: html_document
 ---
-<p align="center">
-
-Office: 301 Jeffords Hall   
-    
-Email: mkhodave@uvm.edu   
-
-<img src="image.jpeg" width="300" height="400" />
-
-My name is *Massi* and I like *Plants* espesially **Sunflowers**
-
-
-Fun Fact: I have lived in China but never had a Chinese food there!
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

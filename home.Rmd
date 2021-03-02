@@ -11,7 +11,7 @@ output:
 ---
 <p align="center">
 
-**Office:** 301 Jeffords Hall, <br>
+**Office:** 301 Jefford's Hall, <br>
 University of Vermont
 
     
@@ -21,9 +21,9 @@ University of Vermont
 
 Me!
 
-# About
+# About:
 
 I am currently a PhD’s student in the Plant Biology Program at the University of Vermont. I received my Master  in Plant Science and Biotechnology from University of Syracuse in 2019.
 
 
-*Fun Fact*: **I have lived in China but never had a Chinese food there**!
+Fun Fact: **I have lived in China but never had a Chinese food there**!

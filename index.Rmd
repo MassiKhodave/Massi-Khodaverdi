@@ -13,5 +13,10 @@ output:
 [My Webpage](home.html)
 
 # List of Homeworks
+
+
 [Week 2](Week2.html)
+
+[week 3](week3.html)
+
 

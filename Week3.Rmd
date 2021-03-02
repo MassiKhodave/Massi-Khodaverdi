@@ -1,6 +1,5 @@
 ---
 title: "Week 3"
-date: "2/27/21"
 author: "Masoumeh Khodaverdi"
 output: html_document
 editor_options: 
@@ -133,5 +132,7 @@ Transformed to this:
     Lasneo, 55, 3.3
 
 *By replacing `(\w{3})\w+,(\w{3})\w+,(\d+.\d),(\d+) with \1\2, \4, \3`*
+
+
 
 [Return to Main Page](index.html)

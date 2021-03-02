@@ -26,7 +26,7 @@ Transformed to this:
     Second,More Text,1.555555,2.2220
     Third,x,3,124
 
-*By replacing `\t+ with \,`*
+By replacing `\t+ with \,`
 
 ## **Problem 2**:
 
@@ -43,7 +43,7 @@ Transformed to this:
     Aaron Ellison (Harvard Forest)
     Sydne Record (Bryn Mawr)
 
-*By replacing `(\w+)\,\s(\w+)\,\s(.*) with \2 \1 \(\3\)`*
+By replacing `(\w+)\,\s(\w+)\,\s(.*) with \2 \1 \(\3\)`
 
 ## **Problem 3**:
 
@@ -58,7 +58,7 @@ Transformed to:
     0003 Cherokee Shuffle.mp3
     0004 Walking Cane.mp3
 
-*By replacing `(.mp3)\s+ with \1\n`*
+By replacing `(.mp3)\s+ with \1\n`
 
 ## **Problem 4**:
 
@@ -76,8 +76,8 @@ Transformed to:
     Cherokee Shuffle_0003.mp3
     Walking Cane_0004.mp3
 
-*By replacing
-`(\w{4})\s(\w+\s\w+\s*\w*\s*\w*)(\.mp3) with \2_\1\3`*
+By replacing
+`(\w{4})\s(\w+\s\w+\s*\w*\s*\w*)(\.mp3) with \2_\1\3`
 
 ## **Problem 5**:
 
@@ -95,7 +95,7 @@ Transformed to this:
     M_punctiventris,4
     L_neoniger,55
 
-*By replacing`(\w)\w+\,(\w+)\,\d+\.\d+\,(\d+) with \1_\2,\3`*
+By replacing`(\w)\w+\,(\w+)\,\d+\.\d+\,(\d+) with \1_\2,\3`
 
 ## **Problem 6**:
 
@@ -113,7 +113,7 @@ Transformed to this:
     M_punc,4
     L_neon,55
 
-*By replacing`(\w)\w+\,(\w{4})\w+\,\d+\.\d+\,(\d+) with \1_\2,\3`*
+By replacing`(\w)\w+\,(\w{4})\w+\,\d+\.\d+\,(\d+) with \1_\2,\3`
 
 ## **Problem 7**:
 
@@ -131,7 +131,9 @@ Transformed to this:
     Myrpun, 4, 12.2
     Lasneo, 55, 3.3
 
-*By replacing `(\w{3})\w+,(\w{3})\w+,(\d+.\d),(\d+) with \1\2, \4, \3`*
+By replacing `(\w{3})\w+,(\w{3})\w+,(\d+.\d),(\d+) with \1\2, \4, \3`
+
+
 
 
 

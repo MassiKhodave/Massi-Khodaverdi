@@ -5,9 +5,9 @@ title: "Masoumeh Khodaverdi"
 author: "Masoumeh (*Massi*) Khodaverdi"
 
 output: 
-prettydoc::html_pretty:
-  theme: Architect
-  highlight: github
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
 ---
 <p align="center">
 

@@ -1,5 +1,6 @@
 ---
-title: "Biol 381 - Computational Biology"
+title: "Bio 381 - Computational Biology"
+date: Spring 2021
 author: "Masoumeh Khodaverdi"
 
 output: 

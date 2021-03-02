@@ -28,20 +28,3 @@ I’m currently a PhD’s student in the Plant Biology Program at the University
 
 *Fun Fact*: **I have lived in China but never had a Chinese food there**!
 
-
-# 
-
-
-
-
-
-
-
-
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-#

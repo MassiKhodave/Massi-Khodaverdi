@@ -10,4 +10,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Proof of completion of homework 2 - linked webpage to local repository
 
-[Return to Main Page](Home.html)
+[Return to Main Page](home.html)

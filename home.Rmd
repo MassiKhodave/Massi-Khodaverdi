@@ -1,0 +1,30 @@
+---
+title: "Masoumeh Khodaverdi"
+
+
+author: "PhD Student of Plant Biology"
+
+output: 
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+---
+<p align="center">
+
+**Office:** 301 Jeffords Hall, <br>
+University of Vermont
+
+    
+**Email:** mkhodave@uvm.edu   
+
+<img src="image.jpeg" width="300" height="400" />
+
+Me!
+
+# About
+
+I am currently a PhD’s student in the Plant Biology Program at the University of Vermont. I received my Master  in Plant Science and Biotechnology from University of Syracuse in 2019.
+
+
+*Fun Fact*: **I have lived in China but never had a Chinese food there**!
+

@@ -17,7 +17,7 @@ output:
 
 [Week 2](Week2.html)
 
-[week 3](week3.html)
+[week 3](Week3.html)
 
 [week 4](week4.html)
 

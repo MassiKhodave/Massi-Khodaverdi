@@ -1,0 +1,17 @@
+---
+title: "Biol 381 - Computational Biology"
+author: "Masoumeh Khodaverdi"
+date: "3/1/2021"
+
+output: 
+  prettydoc::html_pretty:
+    theme: Architect
+    highlight: github
+
+---
+# Personal Webpage 
+[My Webpage](index.html)
+
+# List of Homework SetS
+[Week 2](Week2.html)
+

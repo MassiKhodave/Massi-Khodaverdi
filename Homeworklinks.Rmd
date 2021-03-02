@@ -1,0 +1,20 @@
+---
+title: "Weekly Homework"
+author: "Masoumeh Khodaverdi"
+
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Content of homework assignments
+
+# *Week 1*
+nothing due
+
+# *Week 2*
+
+
+Proof of completion of homework 2 - linked webpage to local repository

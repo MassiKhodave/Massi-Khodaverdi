@@ -1,6 +1,6 @@
 ---
 title: "Week 3"
-data: "2/27/2021"
+date: "2/27/21"
 author: "Masoumeh Khodaverdi"
 output: html_document
 editor_options: 

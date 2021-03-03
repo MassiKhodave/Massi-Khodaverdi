@@ -126,9 +126,5 @@ $$P(\mbox{Occurrence of Species A})=z$$
 
 
 
-[Letter](Letter.pdf)
-
-[Presentation]()
-
 
 [Return to Main Page](index.html)

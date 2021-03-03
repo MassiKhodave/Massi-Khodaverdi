@@ -1,30 +1,168 @@
 ---
-title: "My First Markdown Docoument"
+title: "My first markdown docoument"
 author: "Masoumeh Khodaverdi"
 date: "2/16/2021"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+
+
+
+# **Headers (levels 1-6)**
+
+# Computional Biology 
+## Computional Biology
+### Computional Biology
+#### Computional Biology
+##### Computional Biology
+###### Comutional Biology
+
+# **Unordered lists**
+
+* Monocotyledon  
+* Dicotyledons 
+    + *Arabidopsis* 
+    + *Papaver* 
+    
+    
+# **Manual line breaks**   
+Sky is blue,   
+Violets are blue, too.
+   
+
+# **Links**   
+[My webpage](home.html)
+
+# **Block quotes**   
+
+> I would rather be an artist than a leader. 
+
+# **Plain code blocks**   
+
+```
+Practice makes perfect.
+```
+# **R code block**   
 ```
 
-## R Markdown
+> qplot(x= mass, y= time)
+```
+# **In line blocks**   
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+We defined the `add` function to 
+compute the sum of two numbers.
+    
+# Fencing
+in line fencing with a backtick `to show anything in a plain text with *no* formatting`
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+in line execution of r inside the backticks by inserting r as the first element `r 3 +pi`
 
-```{r cars}
-summary(cars)
+3 backticks for a whole section of plain text
+```
+everything here is in a plaintext.
+even single line.
+usfel especially when showing other coding instructions.
 ```
 
-## Including Plots
+# Block quotes with `>`
 
-You can also embed plots, for example:
+> to be or not to be, that is the question.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+# spacer line with 3 or more undescores
+
+
+___
+#add a line between text.
+
+# Links
+
+http://example.com
+
+[linked phrase](http://example.com)
+
+A [linked phrase][id]. 
+
+At the bottom of the document:
+
+[id]: http://example.com/ "Title"
+
+# Images
+
+![alt text](http://example.com/logo.png)
+
+`![alt text](figures/img.png)`
+ 
+ 
+# Tables
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+# LaTeX code for equations
+ we set off the equation with `$`for brackets.
+## in-Line-equations
+
+These equations such  as $a= 3+ 4$ will appear inside of a single line of text. 
+
+These equations such  $$ a= 3+ 4  $$ will appear in seperate line of thir own.
+
+
+##  Subscripts
+
+$$H_0=Z_{a+b}$$
+
+
+## Superscripts
+
+$$s= cA^z$$
+
+Elements can be coupled and nested.
+$$ s=cA^z_1+z_2{2+ x}$$
+
+##  Fractions and Greek symbols
+
+$$\alpha= \frac{\beta}{\delta+\gamma_x}$$
+
+
+## Summation signs
+$$z=\sum_{i=1}^x{k}$$
+
+##  Escape the backslash with a custome term
+
+
+$$\backslash \alpha \le b \backslash$$
+
+##  Rendering plaintext in a LaTex equatin
+
+$$P(Occuurence of Species A)= Z$$
+
+$$P(\mbox{Occurrence of Species A})=z$$
+
+```{r, echo=TRUE, eval=TRUE}
+#  do not forget to start with comments!
+
+# preliminaries 
+library(ggplot2)
+
+
+pred <- 1:10 # vector of 10 integres
+res <- runif(10) #random uniform values
+# print random numbers
+print(res)
+# plot the graph
+
+qplot(x= pred, y= res)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+ 
+ 
+
+
+

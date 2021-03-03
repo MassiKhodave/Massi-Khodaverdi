@@ -15,6 +15,53 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
+# **Headers (levels 1-6)**
+
+# Computional Biology 
+## Computional Biology
+### Computional Biology
+#### Computional Biology
+##### Computional Biology
+###### Comutional Biology
+
+# **Unordered lists**
+
+* Monocotyledon  
+* Dicotyledons 
+    + *Arabidopsis* 
+    + *Papaver* 
+    
+    
+# **Manual line breaks**   
+Sky is blue,   
+Violets are blue, too.
+   
+
+# **Links**   
+[My webpage](home.html)
+
+# **Block quotes**   
+
+> I would rather be an artist than a leader. 
+
+# **Plain code blocks**   
+
+```
+Practice makes perfect.
+```
+# **R code block**   
+```
+
+> qplot(x= mass, y= time)
+```
+# **In line blocks**   
+
+We defined the `add` function to 
+compute the sum of two numbers.
+
+
+
+
 
 
 

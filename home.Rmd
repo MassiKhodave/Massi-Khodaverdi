@@ -19,15 +19,15 @@ University of Vermont
 
 
 
-<img src="image.jpeg" width="300" height="400" />,  <br>
-*Me enjoying summer in Chicago Botanic garden*!
+<img src="image.jpeg" width="300" height="400" />  <br>
+*Me enjoying summer in Chicago Botanic garden!*
 
 
 
 
 # About:
 
-I am currently a PhD’s student in the Plant Biology Program at the University of Vermont. I received my Master  in Plant Science and Biotechnology from University of Syracuse in 2019.
+Massi is currently a PhD’s student in the Plant Biology Program at the University of Vermont. She has received her Master in Plant Science and Biotechnology from University of Syracuse in 2019. Her fun fact is she has lived in China but never had a Chinese food there!
 
 
-Fun Fact: **I have lived in China but never had a Chinese food there**!
+

@@ -22,7 +22,7 @@ output:
 [Week 4](week4.html)
 
 
-  [Letter to myself](Letter.pdf)
+  [Letter to Myself](Letter.pdf)
     
      
 

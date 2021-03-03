@@ -1,0 +1,74 @@
+\documentclass[10pt]{article} % change font size here
+
+%--------------------------------------
+\usepackage{hyphenat} % use to disable hyphenation
+\usepackage[margin=1.0in,top=0.25in]{geometry} % adjust margins
+\usepackage{lipsum} % Just for this example
+
+%--------------------------------------
+% \renewcommand{\familydefault}{\ttdefault} % use for plain text
+\setlength{\parindent}{0pt} % No paragraph indent
+\pagestyle{empty} % No page headers/footers
+\setlength{\parskip}{5mm plus 4mm minus 3mm} % for paragraph spacing
+%--------------------------------------
+\begin{document}
+\raggedright % toggle off for flush right margin
+\includegraphics[scale=2]{UVMLogoSolid7484.jpg}\\ % delete to remove UVM letterhead
+
+%--------------------------------------
+ \hfill\hfill\hfill % to align following text flush right
+ 4 February 2021\\[10pt]  % <-- ADD DATE HERE
+ 
+%--------------------------------------
+\begin{tabular}{l@{}}
+  Nicholas J. Gotelli \\
+  % 115 Robinson Parkway \\
+  % Burlington, Vermont 05401 \\
+  % Phone: (802) 734-9353 \\
+  % Email: ngotelli@uvm.edu
+\end{tabular}
+
+%--------------------------------------
+\begin{tabular}{@{}l}
+  % date time stamp % use these entries for left flush
+  % \bigskip
+Recipient Name\\
+Address 1\\
+Address 2\\
+Address 3
+\end{tabular}
+%--------------------------------------
+%--------------------------------------
+
+
+Dear Massi,
+
+Take a moment and go have yourself a proper personal day. And don't—don't you dare—feel guilty for taking the time for yourself. This year has been a crazy one. You desrve the best.
+
+Kindest regards,
+
+
+\lipsum[1-2]
+
+
+
+% \newpage % use if necessary to adjust spacing for signature block
+
+%--------------------------------------
+%--------------------------------------
+
+\begin{tabular}{@{}l}
+Sincerely yours,\\
+%\includegraphics[scale=0.15,width=2in]{MySignature.jpg}\\
+Masoumeh Khodaverdi, PhD Student\\
+, Department of Plant Biology\\
+University of Vermont\\
+Burlington, VT 05405 USA\\
+\\
+mkhodave@uvm.edu\\
+
+\end{tabular}
+%--------------------------------------
+
+\end{document}
+

@@ -74,14 +74,19 @@ Mass (g)      | Time (min)
 
 # **Text highlighting**   
 
-A man who dares to waste one hour of time has not discovered the value of life <span style="background-color: #FFFF00"></span>. <span style="background-color: #FFFF00">'Dawin'</span>
+A man who dares to waste one hour of time has not discovered the value of life <span style="background-color: #FFFF00"></span>. <span style="background-color: #FFFF00">'Darwin'</span>
 
-# **Cause-and-effect diagram**   
+# **Cause-and-effect diagram** 
+
+Cereal flowering	time	networks.
+
+    CO --> VRN3
+    A == text ==> B
 
 
 
     
-### *Miscellaneous*   
+#### **Miscellaneous**   
 
 In line execution of r inside the backticks by inserting r as the first element `r 3 +pi`
 

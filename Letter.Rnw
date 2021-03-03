@@ -17,7 +17,7 @@
 
 %--------------------------------------
  \hfill\hfill\hfill % to align following text flush right
- 4 February 2021\\[10pt]  % <-- ADD DATE HERE
+February 2021\\[10pt]  % <-- ADD DATE HERE
  
 %--------------------------------------
 \begin{tabular}{l@{}}

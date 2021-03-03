@@ -1,5 +1,5 @@
 ---
-title: "Bio 381 - Computational Biology"
+title: "Bio 381 - Computational Biology Homepage"
 date: Spring 2021
 author: "Masoumeh Khodaverdi"
 
@@ -24,7 +24,8 @@ output:
 
   [Letter to Myself](Letter.pdf)
     
-  [Presentation](   
+  [Beamer Template](Beamer.pdf)
+  
 
 [Week 5](week5.html)
 

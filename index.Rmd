@@ -10,9 +10,14 @@ output:
 
 ---
 # Personal Webpage 
+___
 [My Webpage](home.html)
 
+
 # List of Homeworks
+___
+
+[Homework Schedule](https://gotellilab.github.io/Bio381/)
 
 
 [Week 2](Week2.html)

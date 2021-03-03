@@ -8,11 +8,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Typora
-
-
-
-
 
 
 # **Headers (levels 1-6)**
@@ -93,19 +88,19 @@ even single line.
 usfel especially when showing other coding instructions.
 ```
 
-###  **Subscripts**
+####  **Subscripts**
 
 $$H_0=Z_{a+b}$$
 
 
-### **Superscripts**
+####  **Superscripts**
 
 $$s= cA^z$$
 
 Elements can be coupled and nested.
 $$ s=cA^z_1+z_2{2+ x}$$
 
-### **Fractions and Greek symbols**
+####  **Fractions and Greek symbols**
 
 $$\alpha= \frac{\beta}{\delta+\gamma_x}$$
 

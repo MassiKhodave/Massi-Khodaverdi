@@ -56,8 +56,7 @@ Practice makes perfect.
 ```
 # **In line blocks**   
 
-We defined the `add` function to 
-compute the sum of two numbers.
+Keep up the good work with your `Computional Biology tools`
 
 
 

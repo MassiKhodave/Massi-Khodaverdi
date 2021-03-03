@@ -59,11 +59,71 @@ Practice makes perfect.
 Keep up the good work with your `Computional Biology tools`
 
 
+# **Centered LaTeX equation**   
+
+These equations such  as $a= 3+ 4$ will appear inside of a single line of text. 
+
+These equations such  $$ a= 3+ 4  $$ will appear in separate line of their own.
 
 
+# **Horizontal line**   
+___
 
 
+# **Simple table**   
 
-# LaTeX
+Mass (g)      | Time (min)
+------------- | -------------
+125           | 23 
+130           | 45
+
+# **Text highlighting**   
+
+A man who dares to waste one hour of time has not discovered the value of life <span style="background-color: #FFFF00"></span>. <span style="background-color: #FFFF00">'Dawin'</span>
+
+    
+### *Miscellaneous*   
+
+In line execution of r inside the backticks by inserting r as the first element `r 3 +pi`
+
+
+```
+everything here is in a plaintext.
+even single line.
+usfel especially when showing other coding instructions.
+```
+
+###  **Subscripts**
+
+$$H_0=Z_{a+b}$$
+
+
+### **Superscripts**
+
+$$s= cA^z$$
+
+Elements can be coupled and nested.
+$$ s=cA^z_1+z_2{2+ x}$$
+
+### **Fractions and Greek symbols**
+
+$$\alpha= \frac{\beta}{\delta+\gamma_x}$$
+
+
+####  **Summation signs**
+$$z=\sum_{i=1}^x{k}$$
+
+####   **Escape the backslash with a custome term**
+
+
+$$\backslash \alpha \le b \backslash$$
+
+####   **Rendering plaintext in a LaTex equatin**
+
+$$P(Occuurence of Species A)= Z$$
+
+$$P(\mbox{Occurrence of Species A})=z$$
+
+
 
 [Return to Main Page](index.html)

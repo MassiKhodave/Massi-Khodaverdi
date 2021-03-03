@@ -8,16 +8,25 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Problem 1: 
+# **Problem 1:** 
+Suppose x = 1.1, a = 2.2, and b = 3.3. Assign each expression to the value of the variable z and print the value stored in z.
+```
+```
 
 
-# Problem 2:
 
-# Problem 3:
 
-# Problem 4:
+# **Problem 2:** 
+Using the rep and seq functions, create the following vectors:
 
-# Problem 5:
+# **Problem 3:**
+Create a vector of two random uniform numbers. In a spatial map, these can be interpreted as x and y coordinates that give the location of an individual (such as a marked forest tree in a plot that has been mapped). Using one of R’s inverse trigonometry functions (asin(), acos(), or atan()), convert these numbers into polar coordinates (If you don’t know what polar coordinates are, read about them on the web here, here, or in your calculus textbook).
+
+# **Problem 4:**
+Suppose that queue <- c("sheep", "fox", "owl", "ant") and that queue represents the animals that are lined up to enter Noah’s Ark, with the sheep at the front of the line. Using R expressions, update the queue successively as
+
+# **Problem 5:**
+Use R to create a vector of all of the integers from 1 to 100 that are not divisible by 2, 3, or 7.
 
 
 

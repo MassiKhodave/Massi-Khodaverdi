@@ -21,21 +21,18 @@
  
 %--------------------------------------
 \begin{tabular}{l@{}}
-  Nicholas J. Gotelli \\
-  % 115 Robinson Parkway \\
-  % Burlington, Vermont 05401 \\
-  % Phone: (802) 734-9353 \\
-  % Email: ngotelli@uvm.edu
+  Massi Khodaverdi \\
+  301 Jefford's Hall \\
+  Department Plant Biology\\
+  Burlington, Vermont 05401 \\
+  Email: mkhodave@uvm.edu
 \end{tabular}
 
 %--------------------------------------
 \begin{tabular}{@{}l}
   % date time stamp % use these entries for left flush
   % \bigskip
-Recipient Name\\
-Address 1\\
-Address 2\\
-Address 3
+
 \end{tabular}
 %--------------------------------------
 %--------------------------------------
@@ -43,9 +40,9 @@ Address 3
 
 Dear Massi,
 
-Take a moment and go have yourself a proper personal day. And don't—don't you dare—feel guilty for taking the time for yourself. This year has been a crazy one. You desrve the best.
+Take a moment and go have yourself a proper personal day. And don't—don't you dare—feel guilty for taking the time for yourself. This year has been a crazy one. You deserve the best.
 
-Kindest regards,
+
 
 
 \lipsum[1-2]
@@ -61,10 +58,9 @@ Kindest regards,
 Sincerely yours,\\
 %\includegraphics[scale=0.15,width=2in]{MySignature.jpg}\\
 Masoumeh Khodaverdi, PhD Student\\
-, Department of Plant Biology\\
+Department of Plant Biology\\
 University of Vermont\\
 Burlington, VT 05405 USA\\
-\\
 mkhodave@uvm.edu\\
 
 \end{tabular}

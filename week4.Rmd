@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-# **Headers (levels 1-6)**
+# **Headers**
 
 # Computional Biology 
 ## Computional Biology
@@ -76,6 +76,10 @@ Mass (g)      | Time (min)
 
 A man who dares to waste one hour of time has not discovered the value of life <span style="background-color: #FFFF00"></span>. <span style="background-color: #FFFF00">'Dawin'</span>
 
+# **Cause-and-effect diagram**   
+
+
+
     
 ### *Miscellaneous*   
 
@@ -118,6 +122,10 @@ $$\backslash \alpha \le b \backslash$$
 $$P(Occuurence of Species A)= Z$$
 
 $$P(\mbox{Occurrence of Species A})=z$$
+
+
+
+
 
 
 

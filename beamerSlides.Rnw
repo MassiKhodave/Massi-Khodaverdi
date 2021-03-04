@@ -1,14 +1,3 @@
----
-title: "Beamer.Rnw"
-author: "Masoumeh Khodaverdi"
-date: "3/3/2021"
-output: pdf_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Beamer Presentation
 % LaTeX Template
@@ -28,6 +17,12 @@ knitr::opts_chunk$set(echo = TRUE)
 % PACKAGES-----------------------------------
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+% NOTE:
+%------
+% This is what I added to resolve the following error:
+% !pdfTeX error: pdflatex.exe (file mathkerncmssi12): Font mathkerncmssi12 at 600 not found
+\pdfmapfile{+sansmathaccent.map}
 
 % THEMES AND COLORS-------------------------
 \mode<presentation> {
@@ -53,17 +48,17 @@ knitr::opts_chunk$set(echo = TRUE)
 % TITLE PAGE DATA--------------------------
 \title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Nicholas J. Gotelli} % Your name
+\author{Masoumeh Khodaverdi} % Your name
 
 \institute[UVM] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 University of Vermont \\ % Your institution for the title page
-Department of Biology \\
+Department of Plant Biology \\
 Burlington, VT 05401 USA \\ 
 \medskip
-\textit{ngotelli@uvm.edu} % Your email address
+\textit{mkhodave@uvm.edu} % Your email address
 }
-\date{9 January 2021} % Date, can be changed to a custom date or \today
+\date{9 Febrarury 2021} % Date, can be changed to a custom date or \today
 % -----------------------------------------
 
 % BEGIN DOCUMENT---------------------------
@@ -113,7 +108,7 @@ Burlington, VT 05401 USA \\
 \frametitle{Figure}
 % Uncomment the code on this slide to include your own image from the same directory as the template  file.
 % \begin{figure}
-   \includegraphics[width=1.0\linewidth]{UVMLogoSolid_UVMgreen_1000w.jpg}
+   \includegraphics[width=1.0\linewidth]{UVMLogoSolid7484.jpg}
 % use this format for absolute sizing
 %\includegraphics[width=3cm, height=4cm]{filename.jpg}
 % \end{figure}

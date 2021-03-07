@@ -46,7 +46,7 @@
 % -----------------------------------------
 
 % TITLE PAGE DATA--------------------------
-\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Short title]{Melica Flowering Evolution} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Masoumeh Khodaverdi} % Your name
 
@@ -58,7 +58,7 @@ Burlington, VT 05401 USA \\
 \medskip
 \textit{mkhodave@uvm.edu} % Your email address
 }
-\date{9 Febrarury 2021} % Date, can be changed to a custom date or \today
+\date{Febrarury 2021} % Date, can be changed to a custom date or \today
 % -----------------------------------------
 
 % BEGIN DOCUMENT---------------------------
@@ -66,7 +66,7 @@ Burlington, VT 05401 USA \\
 
 % OPTIONAL TITLE PAGE SLIDE----------------
 \begin{frame}
-\titlepage % Print the title page as the first slide
+\Melica Flowering Evolution % Print the title page as the first slide
 \end{frame}
 
 % OPTIONAL TABLE OF CONTENTS SLIDE---------

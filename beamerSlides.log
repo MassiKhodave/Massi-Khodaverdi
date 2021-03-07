@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.3.3)  4 MAR 2021 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.3.3)  4 MAR 2021 12:38
 entering extended mode
 **./beamerSlides.tex
 (beamerSlides.tex
@@ -861,7 +861,19 @@ Dictionary: translator-numbers-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-theorem-dictionar
 y-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
-) (beamerSlides.nav) [1
+) (beamerSlides.nav)
+! Undefined control sequence.
+<recently read> \Melica 
+                        
+l.121 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
 
 ] (beamerSlides.toc) [2
 
@@ -894,7 +906,7 @@ thkerncmss.
 ] [6
 
 ]
-<UVMLogoSolid7484.jpg, id=187, 206.4513pt x 54.4434pt>
+<UVMLogoSolid7484.jpg, id=185, 206.4513pt x 54.4434pt>
 File: UVMLogoSolid7484.jpg Graphic file (type jpg)
 <use UVMLogoSolid7484.jpg>
 Package pdftex.def Info: UVMLogoSolid7484.jpg  used on input line 166.
@@ -914,14 +926,14 @@ Package pdftex.def Info: UVMLogoSolid7484.jpg  used on input line 166.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 8.
 
-Overfull \hbox (143.48535pt too wide) in paragraph at lines 13--13
-[]\OT1/cmtt/m/n/12 ##  [1] 0.40854241 0.02098241 0.35062900 0.71365124 0.142128
-00 0.12797936[] 
+Overfull \hbox (180.53537pt too wide) in paragraph at lines 13--13
+[]\OT1/cmtt/m/n/12 ##  [1] 0.481565314 0.038783710 0.832815855 0.297196928 0.59
+3156496 0.794646829[] 
  []
 
 
-Overfull \hbox (7.63528pt too wide) in paragraph at lines 13--13
-[]\OT1/cmtt/m/n/12 ##  [7] 0.46068423 0.80931699 0.53369352 0.92875878[] 
+Overfull \hbox (32.3353pt too wide) in paragraph at lines 13--13
+[]\OT1/cmtt/m/n/12 ##  [7] 0.976003003 0.925779664 0.972431441 0.008413921[] 
  []
 
 ) [11
@@ -930,7 +942,7 @@ Overfull \hbox (7.63528pt too wide) in paragraph at lines 13--13
 \openout4 = `beamerSlides.vrb'.
 
  (beamerSlides.vrb
-<figure/unnamed-chunk-2-1.pdf, id=316, 180.675pt x 180.675pt>
+<figure/unnamed-chunk-2-1.pdf, id=314, 180.675pt x 180.675pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 <use figure/unnamed-chunk-2-1.pdf>
 Package pdftex.def Info: figure/unnamed-chunk-2-1.pdf  used on input line 6.
@@ -968,11 +980,11 @@ Package rerunfilecheck Info: File `beamerSlides.out' has not changed.
 (rerunfilecheck)             Checksum: 263D307720953EF2ACC3DBC3B67AB706;164.
  ) 
 Here is how much of TeX's memory you used:
- 18090 strings out of 480898
- 344442 string characters out of 2908369
- 591005 words of memory out of 3000000
- 33475 multiletter control sequences out of 15000+200000
- 541517 words of font info for 57 fonts, out of 3000000 for 9000
+ 18032 strings out of 480898
+ 343157 string characters out of 2908369
+ 591013 words of memory out of 3000000
+ 33418 multiletter control sequences out of 15000+200000
+ 541166 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,14n,67p,852b,579s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/P
@@ -982,12 +994,11 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
-am10.pfb>
-Output written on beamerSlides.pdf (16 pages, 854623 bytes).
+fonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb>
+Output written on beamerSlides.pdf (16 pages, 841231 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
+ 484 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -229,6 +229,19 @@ print(z1)</code></pre>
 <div id="problem-3" class="section level1">
 <h1><strong>Problem 3:</strong></h1>
 <p>Create a vector of two random uniform numbers. In a spatial map, these can be interpreted as x and y coordinates that give the location of an individual (such as a marked forest tree in a plot that has been mapped). Using one of R’s inverse trigonometry functions (asin(), acos(), or atan()), convert these numbers into polar coordinates (If you don’t know what polar coordinates are, read about them on the web here, here, or in your calculus textbook).</p>
+<pre><code>set.seed(5)
+x&lt;- runif(1, min=2, max=10)
+y&lt;- runif(1, min=5, max=35)
+
+print(x)
+print(y)
+
+r&lt;- x^2+y^2
+r2&lt;- sqrt(r)
+print(r2)
+
+theta&lt;-asin(y/r)
+print(theta)</code></pre>
 </div>
 <div id="problem-4" class="section level1">
 <h1><strong>Problem 4:</strong></h1>

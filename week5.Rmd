@@ -58,6 +58,22 @@ print(z1)
 
 # **Problem 3:**
 Create a vector of two random uniform numbers. In a spatial map, these can be interpreted as x and y coordinates that give the location of an individual (such as a marked forest tree in a plot that has been mapped). Using one of R’s inverse trigonometry functions (asin(), acos(), or atan()), convert these numbers into polar coordinates (If you don’t know what polar coordinates are, read about them on the web here, here, or in your calculus textbook).
+```
+set.seed(5)
+x<- runif(1, min=2, max=10)
+y<- runif(1, min=5, max=35)
+
+print(x)
+print(y)
+
+r<- x^2+y^2
+r2<- sqrt(r)
+print(r2)
+
+theta<-asin(y/r)
+print(theta)
+```
+
 
 # **Problem 4:**
 Suppose that queue <- c("sheep", "fox", "owl", "ant") and that queue represents the animals that are lined up to enter Noah’s Ark, with the sheep at the front of the line. Using R expressions, update the queue successively as

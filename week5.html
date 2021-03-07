@@ -210,6 +210,21 @@ print(c)
 <div id="problem-2" class="section level1">
 <h1><strong>Problem 2:</strong></h1>
 <p>Using the rep and seq functions, create the following vectors:</p>
+<p>a: (1,2,3,4,5,6,7,8,7,6,5,4,3,2,1)</p>
+<pre><code>z&lt;- seq(from=1, to=8, by=1)
+z1&lt;- seq( from= 7, to=1, by=-1)
+z3&lt;- c(z, z1)
+print(z3)
+</code></pre>
+<p>b.(1,2,2,3,3,3,4,4,4,4,5,5,5,5,5)</p>
+<pre><code>z&lt;- seq(from=1, to=5, by=1)
+z1&lt;- rep(z,z)
+print(z1)
+</code></pre>
+<p>c.(5,4,4,3,3,3,2,2,2,2,1,1,1,1,1)</p>
+<pre><code>z&lt;- seq(from=5, to=1, by=-1)
+z1&lt;- rep(z, (1:5))
+print(z1)</code></pre>
 </div>
 <div id="problem-3" class="section level1">
 <h1><strong>Problem 3:</strong></h1>

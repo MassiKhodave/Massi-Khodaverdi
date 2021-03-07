@@ -31,6 +31,29 @@ print(c)
 # **Problem 2:** 
 Using the rep and seq functions, create the following vectors:
 
+a: (1,2,3,4,5,6,7,8,7,6,5,4,3,2,1)
+
+```
+z<- seq(from=1, to=8, by=1)
+z1<- seq( from= 7, to=1, by=-1)
+z3<- c(z, z1)
+print(z3)
+
+```
+b.(1,2,2,3,3,3,4,4,4,4,5,5,5,5,5)
+```
+z<- seq(from=1, to=5, by=1)
+z1<- rep(z,z)
+print(z1)
+
+```
+c.(5,4,4,3,3,3,2,2,2,2,1,1,1,1,1)
+```
+z<- seq(from=5, to=1, by=-1)
+z1<- rep(z, (1:5))
+print(z1)
+```
+
 
 
 # **Problem 3:**

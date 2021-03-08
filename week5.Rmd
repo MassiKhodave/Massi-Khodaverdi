@@ -157,7 +157,7 @@ print(V)
 [21] 71 73 79 83 85 89 95 97
 ```
 
-[Return to Main Page](index.Rmd)
+[Return to Main Page](index.html)
 
 
 

@@ -8,6 +8,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Proof of completion of homework week 2 - linked my webpage to local repository
+I have successfully linked my webpage to local repository.
 
 [Return to Main Page](index.html)

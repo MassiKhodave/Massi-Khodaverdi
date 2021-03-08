@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # **Problem 1:** 
 Suppose x = 1.1, a = 2.2, and b = 3.3. Assign each expression to the value of the variable z and print the value stored in z.
+
+
 ```
 z<- x ^(a^b)
 print (c)
@@ -64,22 +66,97 @@ x<- runif(1, min=2, max=10)
 y<- runif(1, min=5, max=35)
 
 print(x)
+[1] 3.601716
 print(y)
+[1] 25.55656
 
 r<- x^2+y^2
 r2<- sqrt(r)
 print(r2)
+[1] 25.80911
 
 theta<-asin(y/r)
 print(theta)
+[1] 0.03837629
 ```
 
 
 # **Problem 4:**
 Suppose that queue <- c("sheep", "fox", "owl", "ant") and that queue represents the animals that are lined up to enter Noah’s Ark, with the sheep at the front of the line. Using R expressions, update the queue successively as
 
+a. the serpent arrives and gets in line;
+b. the sheep enters the ark;
+c. the donkey arrives and talks his way to the front of the line;
+d. the serpent gets impatient and leaves;
+e. the owl gets bored and leaves;
+f. the aphid arrives and the ant invites him to cut in line.
+g. Finally, determine the position of the aphid in the line.
+
+```
+queue <- c("sheep", "fox", "owl", "ant")
+print(queue)
+[1] "sheep" "fox"   "owl"   "ant"
+```
+```
+queue_a<- c(queue, "serpent")
+print(queue_a)
+[1] "sheep"   "fox"     "owl"    
+[4] "ant"     "serpent"
+```
+
+```
+queue_b<- queue_a[2:5]
+print(queue_b)
+[1] "fox"     "owl"     "ant"    
+[4] "serpent"
+```
+
+```
+queue_c<- c(queue_b,"donkey")
+print(queue_c)
+[1] "fox"     "owl"     "ant"    
+[4] "serpent" "donkey"
+```
+```
+queue_d<- queue_c[-4]
+print(queue_d)
+[1] "fox"    "owl"    "ant"   
+[4] "donkey"
+```
+
+```
+queue_e<- queue_d[-2]
+print(queue_e)
+[1] "fox"    "ant"    "donkey"
+```
+```
+queue_f<- c(queue_e[1:2], "aphid", queue_e[3])
+print(queue_f)
+[1] "fox"    "ant"    "aphid" 
+[4] "donkey"
+```
+```
+which(queue_f=="aphid")
+[1] 3
+```
+
+
 # **Problem 5:**
 Use R to create a vector of all of the integers from 1 to 100 that are not divisible by 2, 3, or 7.
+```
+V<- 1:100
+
+
+V<- V[which(V%%2 !=0)]
+V<- V[which(V%%3 !=0)]
+V<- V[which(V%%7 !=0)]
+
+print(V)
+[1]  1  5 11 13 17 19 23 25 29 31
+[11] 37 41 43 47 53 55 59 61 65 67
+[21] 71 73 79 83 85 89 95 97
+```
+
 
 
 

@@ -1,0 +1,306 @@
+---
+title: "Homework6"
+author: "Masoumeh Khodaverdi"
+date: "3/23/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Problem 1:** 
+Assign to the variable n_dims a single random integer between 3 and 10.
+
+```
+n_dims <- as.integer(runif(1,min=3,max=10))
+```
+
+Create a vector of consecutive integers from 1 to `n_dims**2`
+```
+vec <- seq(from=1, to=n_dims**2)
+```
+
+Use the sample function to randomly reshuffle these values.
+```
+sample(vec)
+```
+
+create a square matrix with these elements.
+```
+M <- matrix(data=vec, nrow=n_dims)
+```
+
+Print out the matrix.
+```
+print(M)
+
+     [,1] [,2] [,3] [,4] [,5] [,6]
+[1,]   25    2   16   13   40   26
+[2,]   21   27   23   46   20   47
+[3,]   37    7    5   48   42   24
+[4,]    3   15   44    1   32   39
+[5,]   36   14    8   38   19   43
+[6,]    9   11   17   22   34   49
+[7,]   45   12   33   31   35   28
+     [,7]
+[1,]    4
+[2,]   29
+[3,]   10
+[4,]   41
+[5,]    6
+[6,]   18
+[7,]   30
+```
+
+Find a function in r to transpose the matrix.
+
+```
+transpose_M <- t(M)
+```
+Print it out again and note how it has changed.
+```
+print(transpose_M)
+     [,1] [,2] [,3] [,4] [,5] [,6]
+[1,]   25   21   37    3   36    9
+[2,]    2   27    7   15   14   11
+[3,]   16   23    5   44    8   17
+[4,]   13   46   48    1   38   22
+[5,]   40   20   42   32   19   34
+[6,]   26   47   24   39   43   49
+[7,]    4   29   10   41    6   18
+     [,7]
+[1,]   45
+[2,]   12
+[3,]   33
+[4,]   31
+[5,]   35
+[6,]   28
+[7,]   30
+```
+Calculate the sum and the mean of the elements in the first row and the last row.
+```
+sum(M[1,])
+> 126
+mean(M[1,])
+> 18
+sum(M[n_dims,])
+> 214
+mean(M[n_dims,])
+> 30.57143
+```
+Read about the eigen() function and use it on your matrix
+
+```
+eigs <- eigen(M)
+
+eigen() decomposition
+$values
+[1] 169.4575399+ 0.00000i
+[2] -46.6617903+ 0.00000i
+[3]  21.5260615+17.43426i
+[4]  21.5260615-17.43426i
+[5] -15.6164780+ 0.00000i
+[6]   6.7229711+ 0.00000i
+[7]  -0.9543658+ 0.00000i
+
+$vectors
+              [,1]            [,2]
+[1,] -0.2494958+0i  0.196946148+0i
+[2,] -0.4733573+0i -0.295416720+0i
+[3,] -0.3548704+0i -0.418791967+0i
+[4,] -0.3923864+0i  0.694382352+0i
+[5,] -0.3383860+0i -0.456092415+0i
+[6,] -0.3458926+0i  0.091336892+0i
+[7,] -0.4468084+0i  0.004989546+0i
+                        [,3]
+[1,] -0.41519936-0.10080923i
+[2,]  0.58970887+0.00000000i
+[3,] -0.09274173+0.07457935i
+[4,]  0.17941606+0.24081007i
+[5,] -0.02452249-0.17901433i
+[6,]  0.11128374-0.23011139i
+[7,] -0.18513134+0.48279530i
+                        [,4]
+[1,] -0.41519936+0.10080923i
+[2,]  0.58970887+0.00000000i
+[3,] -0.09274173-0.07457935i
+[4,]  0.17941606-0.24081007i
+[5,] -0.02452249+0.17901433i
+[6,]  0.11128374+0.23011139i
+[7,] -0.18513134-0.48279530i
+               [,5]            [,6]
+[1,] -0.23661608+0i  0.052631866+0i
+[2,]  0.29455033+0i -0.920827718+0i
+[3,] -0.56600154+0i -0.007219353+0i
+[4,] -0.09396369+0i  0.071458449+0i
+[5,]  0.60984915+0i -0.155983992+0i
+[6,] -0.24380487+0i  0.198944601+0i
+[7,]  0.31098106+0i  0.283262797+0i
+              [,7]
+[1,]  0.2020494+0i
+[2,]  0.5579238+0i
+[3,] -0.5974851+0i
+[4,] -0.3835382+0i
+[5,]  0.1963256+0i
+[6,] -0.0367915+0i
+[7,]  0.3223503+0i
+```
+
+Look carefully at the elements of `$values` and `$vectors`. What kind of numbers are these?
+```
+## $values are the eigenvalues of matrix M, and they include imaginary parts. $vectors are the eigenvectors of M and they also include imaginary parts. So both of them include complex numbers.
+```
+Dig in with the typeof() function to figure out their type.
+```
+typeof(eigs$values)
+> "complex"
+typeof(eigs$vectors)
+> "complex"
+```
+If have set your code up properly, you should be able to re-run it and create a matrix of different size because n_dims will change.
+
+# **Problem 2:** 
+Create a list with the following named elements:
+
+* `my_matrix`, which is a 4 x 4 matrix filled with random uniform values.
+* `my_logical` which is a 100-element vector of TRUE or FALSE values. Do this efficiently by setting up a vector of random values and then applying an inequality to it.
+* `my_letters`, which is a 26-element vector of all the lower-case letters in random order.
+```
+my_list <- list(my_matrix=matrix(data=runif(16),nrow=4),
+                my_logical=(runif(100)>0.5),
+                my_letters=sample(letters))
+                
+$my_matrix
+          [,1]       [,2]       [,3]
+[1,] 0.3188468 0.70677234 0.65840276
+[2,] 0.9483482 0.81243124 0.22599186
+[3,] 0.9889850 0.43123731 0.84724697
+[4,] 0.4139651 0.06198624 0.05154391
+          [,4]
+[1,] 0.5841439
+[2,] 0.2098722
+[3,] 0.2240336
+[4,] 0.1064270
+
+$my_logical
+  [1]  TRUE FALSE  TRUE  TRUE FALSE  TRUE
+  [7] FALSE  TRUE FALSE FALSE FALSE FALSE
+ [13]  TRUE  TRUE FALSE FALSE  TRUE FALSE
+ [19]  TRUE  TRUE FALSE FALSE  TRUE FALSE
+ [25]  TRUE  TRUE FALSE FALSE  TRUE  TRUE
+ [31]  TRUE  TRUE  TRUE FALSE FALSE  TRUE
+ [37]  TRUE  TRUE  TRUE FALSE  TRUE  TRUE
+ [43]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+ [49]  TRUE FALSE FALSE  TRUE  TRUE  TRUE
+ [55]  TRUE  TRUE FALSE  TRUE  TRUE  TRUE
+ [61]  TRUE FALSE  TRUE  TRUE FALSE FALSE
+ [67]  TRUE FALSE FALSE  TRUE  TRUE  TRUE
+ [73] FALSE  TRUE  TRUE FALSE FALSE FALSE
+ [79]  TRUE FALSE  TRUE  TRUE  TRUE  TRUE
+ [85]  TRUE  TRUE  TRUE FALSE  TRUE FALSE
+ [91] FALSE FALSE FALSE  TRUE FALSE FALSE
+ [97]  TRUE FALSE FALSE FALSE
+
+$my_letters
+ [1] "p" "n" "j" "u" "c" "d" "k" "q" "t"
+[10] "v" "l" "z" "y" "m" "x" "w" "a" "f"
+[19] "r" "b" "s" "o" "i" "h" "g" "e"
+
+```
+Create a new list, which has the element[2,2] from the matrix, the second element of the logical vector, and the second element of the letters vector.
+```
+new_list <- list(my_list$my_matrix[2,2], my_list$my_logical[2], my_list$my_letters[2])
+
+[[1]]
+[1] 0.8124312
+
+[[2]]
+[1] FALSE
+
+[[3]]
+[1] "n"
+
+```
+Use the `typeof()` function to confirm the underlying data types of each component in this list
+```
+typeof(new_list[[1]])
+> "double"
+typeof(new_list[[2]])
+> "logical"
+typeof(new_list[[3]])
+> "character"
+```
+Combine the underlying elements from the new list into a single atomic vector with the c() function.
+```
+atomic_vec <- c(new_list[[1]],new_list[[2]],new_list[[3]])
+
+[1] "0.812431241152808"
+[2] "FALSE"            
+[3] "n" 
+```
+What is the data type of this vector?
+```
+typeof(atomic_vec)
+> "character"
+```
+
+# **Problem 3:** 
+
+Create a data frame with two variables (= columns) and 26 cases (= rows).
+
+Call the first variable my_unis and fill it with 26 random uniform values from 0 to 10. Call the second variable my_letters and fill it with 26 capital letters in random order.
+```
+my_unis <- runif(26, min = 0, max = 10
+my_letters <- sample(LETTERS,26)
+my_df <- data.frame(my_unis, my_letters)
+
+     my_unis my_letters
+1  0.8284596          Q
+2  9.2045914          U
+3  8.6375761          Y
+4  4.0617733          P
+5  1.7977484          X
+6  6.1483976          M
+7  4.6698962          H
+8  7.4956415          V
+9  3.6709121          N
+10 5.4268295          W
+11 7.6184284          K
+12 9.6071858          T
+13 8.7483656          B
+14 7.1686077          J
+15 1.8093961          Z
+16 5.7530594          C
+17 3.6070981          R
+18 7.7474448          A
+19 8.1062832          D
+20 9.9219451          E
+21 5.8467054          F
+22 0.3924181          L
+23 3.2276590          I
+24 8.2728955          S
+25 2.1613190          G
+26 7.5261811          O
+```
+
+For the first variable, use a single line of code in R to select 4 random rows and replace the numerical values in those rows with NA.
+```
+my_df[sample(1:26,4),'my_unis'] = NA
+```
+
+For the first variable, write a single line of R code to identify which rows have the missing values.
+```
+which(is.na(my_df$my_unis))
+> 2  6 18 19
+```
+
+For the second variable, sort it in alphabetical order.
+```
+sort(my_df$my_letters)
+```
+Calculate the column mean for the first variable.
+```
+mean(my_df$my_unis, na.rm=TRUE)
+> 5.375005
+```

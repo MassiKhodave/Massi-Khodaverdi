@@ -38,6 +38,7 @@ ___
 
 [Week 7](week7.html)
 
+[Week 8](week8.html)
 
 
 

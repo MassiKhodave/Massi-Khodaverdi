@@ -5,10 +5,6 @@ date: "4/18/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## **Sampling and Organizing the Data**
 
 I use ideas from my PhD project to simulate data for this homework. Our hypothesis simply put is that plants that have gone through a cold weather during several weeks (like in winter) will flower sooner than those that have not experienced the cold. This process is called vernalization which activates several relevant genes to accelerate the flowering process after warm weather finally shows up. We take two groups of plants with and without vernalization and take their floweing time as the random variables:

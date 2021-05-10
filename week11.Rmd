@@ -1,0 +1,130 @@
+---
+title: "Week 11"
+author: "Masoumeh Khodaverdi"
+date: "5/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Batch Processing**
+*Repeat the exercise from the Batch Processing Lecture (13 April), but do it using real data sets rather than purely simulated. Check with folks in your lab to see if there are multiple data sets available for analysis, or ask Nick or Lauren for suggestions for other data sources. Stick to simple data analyses and graphics, but try to set it up as a batch process that will work on multiple files and save summary results to a common file.*
+
+I used the same real data set that I had downoaded for HW 7 from Dryad, which is related to paper “Burns, Michael (2020), Adaptation to herbivory and detritivory drives the convergent evolution of large abdominal cavities in a diverse freshwater fish radiation (Otophysi: Characiformes)”.
+
+Because this data set has a single file of samples, I follow the same procedure in HW7 to fit a distribution over the data and simulate data from the resulting distribution. From HW7, we know that Gamma distribution fits best to this data. I sampled new data sets to be saved as a new file in my data folder (i.e., "LengthData/") to be used in the batch processing.
+```
+library(MASS)
+
+z <- read.table("Lengths.csv",header=TRUE,sep=",", stringsAsFactors=FALSE)
+
+# fitting Gamma distribution
+gammaPars <- fitdistr(z$Lengths,"gamma")
+shapeML <- gammaPars$estimate["shape"]
+rateML <- gammaPars$estimate["rate"]
+
+# simulating data
+nSim = 100
+n <- length(z[,1])
+for (i in 1:nSim){
+  simz <- rgamma(n=n, shape=shapeML, rat=rateML)
+  simz <- data.frame(1:n, simz)
+  names(simz) <- list("ID", "length")
+  write.csv(simz, paste("LengthData/","SimData_",i,".csv",sep=""), row.names=FALSE)
+}
+```
+Since the first columns of the real and simulated data are the row indices, doing a linear regression across the two columns of each data set is not fully meaningful. However, we stick to the `regStats` function just to run the batch processing.
+
+```
+##################################################
+# function: regStats
+# fits linear model, extracts statistics
+# input: 2-column data frame (x and y)
+# output: slope, p-value, and r2
+#------------------------------------------------- 
+regStats <- function(d=NULL) {
+  if(is.null(d)) {
+    xVar <- runif(10)
+    yVar <- runif(10)
+    d <- data.frame(xVar,yVar)
+  }
+  . <- lm(data=d,d[,2]~d[,1])
+  . <- summary(.)
+  statsList <- list(Slope=.$coefficients[2,1],
+                    pVal=.$coefficients[2,4],
+                    r2=.$r.squared)
+  return(statsList)
+  
+}
+
+```
+Now, we are ready to run our batch processing task:
+
+```
+#--------------------------------------------
+# Global variables
+fileFolder <- "LengthData/"
+fileNames <- list.files(path=fileFolder)
+nFiles <- length(fileNames)
+fileOut <- "StatsSummary.csv"
+#--------------------------------------------
+
+# Create data frame to hold file summary statistics
+ID <- seq_along(fileNames)
+fileName <- fileNames
+slope <- rep(NA,nFiles)
+pVal <- rep(NA,nFiles)
+r2 <- rep(NA,nFiles)
+
+statsOut <- data.frame(ID,fileName,slope,pVal,r2)
+
+# batch process by looping through individual files
+for (i in seq_along(fileNames)) {
+  data <- read.table(file=paste(fileFolder,fileNames[i],sep=""),
+                     sep=",",
+                     header=TRUE) # read in next data file
+  
+  dClean <- data[complete.cases(data),] # get clean cases
+  
+  . <- regStats(dClean) # pull regression stats from clean file
+  statsOut[i,3:5] <- unlist(.) # unlist, copy into last 3 columns
+  
+}
+
+
+# set up output file and incorporate time stamp and minimal metadata
+write.table(cat("# Summary stats for ",
+                "batch processing of regression models","\n",
+                "# timestamp: ",as.character(Sys.time()),"\n",
+                "# NJG","\n",
+                "# ------------------------", "\n",
+                "\n",
+                file=fileOut,
+                row.names="",
+                col.names="",
+                sep=""))
+
+# now add the data frame
+write.table(x=statsOut,
+            file=fileOut,
+            row.names=FALSE,
+            col.names=TRUE,
+            sep=",",
+            append=TRUE)
+
+```
+Printing the first few rows of the resulting stats:
+```
+head(statsOut)
+```
+```
+  ID        fileName        slope       pVal           r2
+1  1     lengths.csv  0.010169403 0.02798826 0.0049378339
+2  2   SimData_1.csv  0.009154886 0.02881199 0.0048868518
+3  3  SimData_10.csv -0.002356590 0.55827090 0.0003512523
+4  4 SimData_100.csv -0.005178617 0.19351193 0.0017316361
+5  5  SimData_11.csv  0.002752988 0.51584965 0.0004326928
+6  6  SimData_12.csv  0.001911387 0.63433293 0.0002318856
+```

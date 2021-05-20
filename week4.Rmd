@@ -82,6 +82,7 @@ A man who dares to waste one hour of time has not discovered the value of life <
 # **Cause-and-effect diagram** 
 
 The hand-drawn flowchart:
+
 ![](Fig4_1.png)
 
 ``` mermaid

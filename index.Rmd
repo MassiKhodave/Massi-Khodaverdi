@@ -29,7 +29,7 @@ ___
 
   [Letter to Myself](Letter.pdf)
     
-  [Beamer Template](beamerSlides.pdf)
+  [Beamer Presentation](beamerSlides.pdf)
   
 
 [Week 5](week5.html)

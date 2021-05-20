@@ -35,6 +35,9 @@ Violets are blue, too.
 # **Links**   
 [My webpage](home.html)
 
+# **Images**   
+![Wheat!](Fig4_0.jpg)
+
 # **Block quotes**   
 
 > I would rather be an artist than a leader. 
@@ -78,10 +81,15 @@ A man who dares to waste one hour of time has not discovered the value of life <
 
 # **Cause-and-effect diagram** 
 
-Cereal flowering	time	networks.
+The hand-drawn flowchart:
+![](Fig4_1.png)
 
-    CO --> VRN3
-    A == text ==> B
+``` mermaid
+graph LR
+n1((D)) -->n3((VRN))
+n2((T)) -->n3
+    n3 -->n4((F))
+```
 
 
 

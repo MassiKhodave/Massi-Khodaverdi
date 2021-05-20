@@ -1,3 +1,5 @@
-\beamer@sectionintoc {1}{First Section}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Subsection Example}{3}{0}{1}
-\beamer@sectionintoc {2}{Second Section}{9}{0}{2}
+\beamer@sectionintoc {1}{My PhD}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{My Lab}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{My Research}{4}{0}{1}
+\beamer@sectionintoc {2}{My Life}{6}{0}{2}
+\beamer@sectionintoc {3}{My Course}{7}{0}{3}
